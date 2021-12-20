@@ -71,15 +71,23 @@
   &__icons {
     display: flex;
     padding-right: 20px;
+    border: 1px solid #ccc;
+    position: relative;
+    top: -4px;
   }
   &__icons-item {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
   }
   &__icons-item a {
     margin-left: 10px;
   }
   &__like {
     font-size: 28px;
+    color: #262626;
   } 
+  &__icons-text {
+    margin-left: 10px;
+  }
 }

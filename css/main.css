@@ -570,9 +570,15 @@ input[type=search]::-webkit-search-results-decoration {
   background-color: #fff;
   width: 614px;
   margin-top: 30px;
-  padding: 20px 0;
   border: 1px solid #ccc;
   border-radius: 4px;
+  position: relative;
+}
+.insta-stores__list {
+  display: flex;
+}
+.insta-stores__group {
+  overflow-x: hidden;
 }
 .insta-stores__item {
   display: flex;
@@ -583,26 +589,29 @@ input[type=search]::-webkit-search-results-decoration {
   position: relative;
   z-index: 1;
   cursor: pointer;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transform: translateX(0);
 }
 .insta-stores__item:nth-child(1) {
-  margin-left: 25px;
+  margin-left: 15px;
 }
 .insta-stores__item::before {
   content: "";
   display: inline-block;
   background: linear-gradient(90deg, #1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
-  width: 60px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
   position: absolute;
-  top: -2px;
-  left: -1.5px;
+  top: 17px;
+  left: -2.5px;
 }
 .insta-stores__img {
-  width: 56px;
+  width: 60px;
+  height: 60px;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 56px;
   border-radius: 50%;
   border: 2px solid #fff;
   position: relative;
@@ -611,6 +620,33 @@ input[type=search]::-webkit-search-results-decoration {
 .insta-stores__text {
   font-size: 12px;
   font-weight: 400;
+}
+.insta-stores__carosel {
+  display: flex;
+  position: relative;
+}
+.insta-stores__prev {
+  position: absolute;
+}
+.insta-stores__next {
+  right: 20px;
+  top: 40px;
+}
+.insta-stores__prev {
+  left: 20px;
+  top: 40px;
+}
+.insta-stores__car-btn {
+  position: absolute;
+  background-color: #fff;
+  z-index: 99999;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.tr {
+  transition: transform 0.5s ease;
 }
 
 .insta-post {
@@ -701,14 +737,22 @@ input[type=search]::-webkit-search-results-decoration {
 .insta-post__icons {
   display: flex;
   padding-right: 20px;
+  border: 1px solid #ccc;
+  position: relative;
+  top: -4px;
 }
 .insta-post__icons-item {
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 }
 .insta-post__icons-item a {
   margin-left: 10px;
 }
 .insta-post__like {
   font-size: 28px;
+  color: #262626;
+}
+.insta-post__icons-text {
+  margin-left: 10px;
 }/*# sourceMappingURL=main.css.map */
