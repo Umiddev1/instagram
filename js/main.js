@@ -27,7 +27,7 @@ function changeEl() {
     else if (x < 0) {
         x = elItem.length;
     }
-    elItems.style.transform = `translateX(${-x * 100}px)`;
+    elItems.style.transform = `translateX(${-x * 60}px)`;
     elItems.classList.add('tr');
 } 
 function prevEl(e) {
