@@ -1,0 +1,88 @@
+.insta-aside {
+  position: fixed;
+  right: 200px;
+  top: 110px;
+  &__iam {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  &__des {
+    position: relative;
+  }
+  &__des::before {
+    // margin-right: 50px;
+    content: "";
+    cursor: pointer;
+    width: 56px;
+    height: 56px;
+    display: inline-block;
+    background-image: url("../../img/enshteyn.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center center;
+    position: absolute;
+    left: -70px;
+    top: -10px;
+  }
+  &__text {
+    font-size: 14px;
+    font-weight: 600;
+    color: #262626;
+    cursor: pointer;
+  }
+  &__span {
+    font-size: 14px;
+    color: #8e8e8e;
+    cursor: pointer;
+  }
+  &__link {
+    font-size: 12px;
+    color: #0095f6;
+    position: relative;
+    left: 30px;
+  }
+  &__for {
+    position: relative;
+    left: -50px;
+    margin-bottom: 30px;
+  }
+  &__for-text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #8E8E8E;
+  }
+  &__for-all {
+    position: relative;
+    left: 30px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #262626;
+  }
+  &__followers-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -60px;
+    margin-bottom: 18px;
+  }
+  &__followers-item::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    background-image: url("../../img/img-one.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+}
+.links {
+  position: relative;
+  left: 70px;
+}
