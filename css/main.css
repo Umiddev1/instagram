@@ -479,7 +479,7 @@ input[type=search]::-webkit-search-results-decoration {
 
 .insta-aside {
   position: fixed;
-  right: 200px;
+  right: 14%;
   top: 110px;
 }
 .insta-aside__iam {
